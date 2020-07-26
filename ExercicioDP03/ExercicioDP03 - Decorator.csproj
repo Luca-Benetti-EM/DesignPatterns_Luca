@@ -51,6 +51,7 @@
     <Compile Include="CoquetelDecorator.cs" />
     <Compile Include="DecoradoresConcretos\Acucar.cs" />
     <Compile Include="DecoradoresConcretos\Gelo.cs" />
+    <Compile Include="DecoradoresConcretos\LeiteCondensado.cs" />
     <Compile Include="DecoradoresConcretos\Limao.cs" />
     <Compile Include="DecoradoresConcretos\Refrigerante.cs" />
     <Compile Include="DecoradoresConcretos\Suco.cs" />
