@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExercicioDP01
+namespace ExercicioDP01.Veiculos
 {
-    public interface IEstrategiaVeiculo
+    public interface IVeiculo
     {
-        int Calcule();
     }
 }

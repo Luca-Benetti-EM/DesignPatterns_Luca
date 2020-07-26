@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExercicioDP01.Veiculos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -11,15 +12,17 @@ namespace ExercicioDP01
     {
         static void Main(string[] args)
         {
-            var _contexto = new Contexto();
+            var calculoEstacionamento = new CalculoEstacionamento();
 
-            _contexto.setEstrategia(new Passeio(10));
+            var carro = new veiculoPasseio();
+            var calculoPasseio = new CalculoPasseio(10);
+            calculoEstacionamento.setEstrategia(calculoPasseio);
+            calculoEstacionamento.Execute();
 
-            _contexto.Execute();
-
-            _contexto.setEstrategia(new Carga(20, 30, 40));
-
-            _contexto.Execute();
+            var caminhao = new veiculoCarga(5, 100);
+            var calculoCarga = new CalculoCarga(20, caminhao);
+            calculoEstacionamento.setEstrategia(calculoCarga);
+            calculoEstacionamento.Execute();
 
             Console.ReadKey();
         }

@@ -43,16 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Carga.cs" />
-    <Compile Include="Contexto.cs" />
-    <Compile Include="IEstrategiaVeiculo.cs" />
-    <Compile Include="Outros.cs" />
-    <Compile Include="Passeio.cs" />
+    <Compile Include="Calculos\CalculoCarga.cs" />
+    <Compile Include="CalculoEstacionamento.cs" />
+    <Compile Include="Calculos\CalculoValor.cs" />
+    <Compile Include="Calculos\CalculoPasseio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Veiculos\IVeiculo.cs" />
+    <Compile Include="Veiculos\veiculoCarga.cs" />
+    <Compile Include="Veiculos\veiculoPasseio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
