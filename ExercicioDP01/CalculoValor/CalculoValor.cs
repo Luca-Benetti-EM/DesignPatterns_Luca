@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ExercicioDP01
 {
-    public interface IEstrategiaVeiculo
+    public interface CalculoValor
     {
-        int Calcule();
+        double Calcular(double inicio, double fim);
     }
 }

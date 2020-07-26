@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Carga.cs" />
-    <Compile Include="Contexto.cs" />
-    <Compile Include="IEstrategiaVeiculo.cs" />
-    <Compile Include="Outros.cs" />
-    <Compile Include="Passeio.cs" />
+    <Compile Include="CalculoValor\Calculo15Minutos.cs" />
+    <Compile Include="CalculoValor\CalculoCarga.cs" />
+    <Compile Include="CalculoValor\CalculoDiaria.cs" />
+    <Compile Include="CalculoValor\CalculoValor.cs" />
+    <Compile Include="ContaEstacionamento.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

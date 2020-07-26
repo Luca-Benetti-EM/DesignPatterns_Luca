@@ -11,15 +11,12 @@ namespace ExercicioDP01
     {
         static void Main(string[] args)
         {
-            var _contexto = new Contexto();
+            var calculoDiaria = new CalculoDiaria();
+            var calculo15Minutos = new Calculo15Minutos();
+            var calculoCarga = new CalculoCarga();
 
-            _contexto.setEstrategia(new Passeio(10));
-
-            _contexto.Execute();
-
-            _contexto.setEstrategia(new Carga(20, 30, 40));
-
-            _contexto.Execute();
+            var contaEstacionamento = new ContaEstacionamento(calculoDiaria, 0, 10);
+            var valorContaEstacionamento = contaEstacionamento.ValorConta();
 
             Console.ReadKey();
         }
